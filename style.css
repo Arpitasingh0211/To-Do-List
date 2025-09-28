@@ -1,0 +1,121 @@
+*{
+margin: 0;
+padding: 0;
+}
+.container{
+    width: 100%;
+    background: linear-gradient(100deg, #020253ec,#5d025de8);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ToDoApp{
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    width: 24em;
+    /* height: 10em; */
+    padding: 3em;
+    border-radius: 10px;
+}
+.ToDoApp img{
+    height: 30px;
+    width: 30px;
+}
+.ToDoApp h2{
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    margin-bottom: 1em;
+    font-size: 30px;
+}
+.input-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #e1e0e0ec;
+    border-radius: 30px;
+    margin-bottom: 1em;
+}
+input{
+    flex: 1;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    padding: 1.2em;
+}
+/* .container input{
+    width: 95%;
+    padding: 0.9em;
+    outline: none;
+    position: relative;
+    border: none;
+    border-radius: 20px;
+    background-color: rgb(227, 227, 227);
+}*/
+button{
+    background: rgb(255, 60, 0);
+    color: white;
+    padding: 1.2em 2.7em;
+    border-radius: 25px;
+    border: none;
+    font-weight: 600;
+    outline: none;
+    cursor: pointer;
+} 
+button:hover{
+    background: rgb(239, 56, 1);
+}
+ul li{
+    list-style: none;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 12px 8px 12px 50px;
+    position: relative;
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+}
+ul li::before{
+    content: '';
+    position: absolute;
+    background-image: url(circle_106796.png);
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 8px;
+    height: 26px;
+    width: 26px;
+    cursor: pointer;
+    /* visibility: hidden; */
+}
+ul li.checked{
+    color: rgba(0, 0, 0, 0.682);
+    text-decoration: line-through;
+}
+ul li.checked::before{
+    background-image: url(tick_6460654.png);
+    /* border: 2px solid black; */
+    border-radius: 50%;
+    background-color: #00ca00;
+    height: 26px;
+    width: 26px;
+    /* visibility: hidden; */
+}
+ul li span{
+    position: absolute;
+    right: 0;
+    top: 12px;
+    height: 1.8em;
+    width: 1.8em;
+    border-radius: 50%;
+    /* background-color: #e1e0e03e; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+}
+
+ul li span:hover{
+    background-color: #e1e0e069;
+}
